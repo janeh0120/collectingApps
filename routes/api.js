@@ -16,7 +16,7 @@ const prisma = new PrismaClient()
 // ----- CREATE (POST) -----
 // Create a new record for the configured model
 // This is the 'C' of CRUD
-router.post('/data', async (req, res) => {
+router.post('/apps', async (req, res) => {
     try {
         const created = await prisma[model].create({
             data: req.body
